@@ -132,6 +132,8 @@ player6 =  modify_agent_config_cn(name=player_names[5],
                               role_hint=Role_hint_merlin_cn,
                               #character_info = "你头脑聪明，来自嘉兴，一直是班里的第一名，外部文静但是腹黑，MBTI是INTJ，说话较简练"
                               )
+
+
 def load_agent_configs(agent_info_list):
     with open("./configs/agent_configs_cn.json", "r", encoding="utf-8") as f:
         agent_configs = json.load(f)

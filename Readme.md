@@ -24,3 +24,7 @@ This is an implementation of the Avalon board game using AI agents as players. T
 
 1. Clone this repository
 2. Install dependencies:
+
+##modify agent
+You can modify agent configurations in modify_agent.py, including roles, prompts, personalities, etc. After making changes, run modify_agent.py to generate the corresponding JSON file that will be used to configure the agent model.
+Then in avalon.py, change model_configs to point to the corresponding JSON file for the changes to take effect.

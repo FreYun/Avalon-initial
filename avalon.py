@@ -3,6 +3,8 @@
 # 切换到游戏目录
 import os
 from functools import partial
+file_path = os.getcwd()
+os.chdir(file_path)
 
 from prompt_cn import Prompts
 from avalon_units import (
@@ -50,7 +52,7 @@ def main() -> None:
     # read model and agent configs, and initialize agents automatically
 
     players = agentscope.init(
-        model_configs="./configs/model_configs.json",
+        model_configs="./configs/model_configs_lcoal.json",
         agent_configs="./configs/agent_configs_cn_modify.json",
         project="Avalon",
     )
