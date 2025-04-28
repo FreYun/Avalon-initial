@@ -132,8 +132,6 @@ player6 =  modify_agent_config_cn(name=player_names[5],
                               role_hint=Role_hint_merlin_cn,
                               #character_info = "你头脑聪明，来自嘉兴，一直是班里的第一名，外部文静但是腹黑，MBTI是INTJ，说话较简练"
                               )
-
-cc_list = [player1,player2,player3,player4,player5,player6]
 def load_agent_configs(agent_info_list):
     with open("./configs/agent_configs_cn.json", "r", encoding="utf-8") as f:
         agent_configs = json.load(f)
@@ -142,4 +140,8 @@ def load_agent_configs(agent_info_list):
         agent_config['args']['name'] = player_names[idx]
     with open("./configs/agent_configs_cn_modify.json", "w", encoding="utf-8") as f:
         json.dump(agent_configs, f, ensure_ascii=False, indent=4)
-load_agent_configs(cc_list)
+
+
+if __name__ == "__main__":
+    cc_list = [player1,player2,player3,player4,player5,player6]
+    load_agent_configs(cc_list)
