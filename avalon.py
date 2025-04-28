@@ -2,8 +2,6 @@
 """A werewolf game implemented by agentscope."""
 # 切换到游戏目录
 import os
-os.chdir('/Users/liyunyue/Downloads/工作资料/东方财富/研究组轮岗/agentscope-main/examples/game_avalon')
-#os.chdir('/Users/liyunyue/Downloads/工作资料/东方财富/研究组轮岗/agentscope-main')
 from functools import partial
 
 from prompt_cn import Prompts

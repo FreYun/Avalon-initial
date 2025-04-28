@@ -2,7 +2,6 @@
 
 import json
 import os
-os.chdir('/Users/liyunyue/Downloads/工作资料/东方财富/研究组轮岗/agentscope-main/examples/game_avalon/')
 
 #英文版规则和角色说明
 # Role_hint_morgana = "You're Morgana in this game. Morgana's goal is to confuse the Percival by pretending to be Merlin. She must use deception to mislead others, while working with the wolves to sabotage missions. Morgana should avoid being exposed as a member of the evil side and protect her true identity."
